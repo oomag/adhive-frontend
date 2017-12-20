@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="./styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
+    <script src="./menu.js"></script>
+</head>
+<body>
+    <ng-component _nghost-c1="">
+        <div _ngcontent-c1="" class="menu_container">
+            <ad-menu _ngcontent-c1="" _nghost-c2="">
+                <div _ngcontent-c2="" class="menu">
+                    <span _ngcontent-c2="" class="menu__logo"></span>
+
+                    <div _ngcontent-c2="" class="nav">
+                        <div _ngcontent-c2="" class="nav__burger">
+                            <span _ngcontent-c2="">Menu</span>
+                        </div>
+
+                        <div _ngcontent-c2="" class="nav__content">
+                            <div _ngcontent-c2="">
+                                <div _ngcontent-c2="" class="nav__content-mobile">
+
+                                </div>
+
+                                <a class="nav__item"
+                                          href="./dashboard.html"
+                                          style="background-image: url(&quot;./icons/dashboard.svg&quot;);">
+                                <span  class="nav__item-text">Dashboard</span>
+                            </a><a class="nav__item"
+                                          href="./purchase.html"
+                                          style="background-image: url(&quot;./icons/purchase.svg&quot;);">
+                                <span  class="nav__item-text">Purchase ADH</span>
+                            </a><a class="nav__item"
+                                          href="./claim.html"
+                                          style="background-image: url(&quot;./icons/claim.svg&quot;);">
+                                <span  class="nav__item-text">Claim ADH</span>
+                            </a><a class="nav__item"
+                                          href="./history.html"
+                                          style="background-image: url(&quot;./icons/history.svg&quot;);">
+                                <span  class="nav__item-text">History</span>
+                            </a>
+
+                                <div _ngcontent-c2="" class="nav__item nav__item_lang">
+                                    <ad-language-switcher _ngcontent-c2="" _nghost-c4="">
+                                        <div _ngcontent-c4="" aria-haspopup="true" class="language">
+                                            <div _ngcontent-c4="" class="language__selected en">
+                                            </div>
+
+
+                                            <span _ngcontent-c2="" class="nav__item-text">Switch language</span>
+
+                                        </div>
+
+                                        <mat-menu _ngcontent-c4="" class="ng-tns-c5-0"><!----></mat-menu>
+                                    </ad-language-switcher>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div _ngcontent-c2="" class="menu__toggle">
+                        <div _ngcontent-c2="" class="menu__toggle-link"></div>
+                    </div>
+                </div>
+            </ad-menu>
+        </div>
+
+        <div _ngcontent-c1="" class="content">
+            <div _ngcontent-c1="" class="content__header">
+                <ad-sub-header _ngcontent-c1="" _nghost-c3="">
+                    <div _ngcontent-c3="" class="sub-header">
+                        <div _ngcontent-c3="" class="sub-header__text">
+                            <div _ngcontent-c3="" class="sub-header__title">Claim ADH</div>
+                            <div _ngcontent-c3="" class="sub-header__info">Claim ADH tokens</div>
+                        </div>
+
+                        <div _ngcontent-c3="" class="sub-header__actions">
+
+                        </div>
+
+                        <div _ngcontent-c3="" aria-haspopup="true" class="sub-header__user">
+                            <div _ngcontent-c3="" class="sub-header__user-name">Mocked User</div>
+                            <div _ngcontent-c3="" class="sub-header__user-group">Mocked Login</div>
+                        </div>
+
+                        <mat-menu _ngcontent-c3="" class="ng-tns-c5-1"><!----></mat-menu>
+                    </div>
+                </ad-sub-header>
+            </div>
+
+            <div _ngcontent-c1="" class="content__body">
+                <router-outlet _ngcontent-c1=""></router-outlet>
+                <ng-component _nghost-c6="">
+                    <div _ngcontent-c6="" class="claim">
+
+                        <div _ngcontent-c6="" class="card claim__card">
+                            <div _ngcontent-c6="" class="card__content">
+                                <div _ngcontent-c6="" class="claim__message">
+                                    Please, enter your own ETH address with access to the private key (ERC20 Wallet) -
+                                    ADH tokens will be available for claiming after successful transaction, use Claim
+                                    Token tab to get your tokens into your ERC20 wallet.
+
+                                    <div _ngcontent-c6="" class="claim__message claim__message_bold">
+                                        <div _ngcontent-c6="" class="claim__message-header">Important!</div>
+                                        <p _ngcontent-c6="">DO NOT USE your cryptoexchange ETH wallet address or ETH
+                                            address created with Ethereum client with no access to private key
+                                            (freewallet.org, coinbase or online Ethereum wallets)!</p>
+                                        <p _ngcontent-c6="">If you don't have the private key of this ETH address, you
+                                            will not have access to your ADH tokens!</p>
+                                    </div>
+
+                                    <p _ngcontent-c6="">You can create an Ethereum address using MyEtherWallet.com,
+                                        Metamask, Mist</p>
+
+                                    <div _ngcontent-c6="" class="claim__input">
+                                        <label _ngcontent-c6="" class="claim__label" for="address">Address</label>
+                                        <input _ngcontent-c6="" id="address"
+                                               placeholder="0x0000000000000000000000000000000000000000" type="text">
+                                    </div>
+                                </div>
+
+                                <div _ngcontent-c6="" class="claim__input">
+                                    <label _ngcontent-c6="" class="claim__label" for="amount">Amount</label>
+                                    <input _ngcontent-c6="" id="amount" placeholder="0.00" type="text">
+                                    <div _ngcontent-c6="" class="claim__input-label">ADH</div>
+                                </div>
+
+                                <div _ngcontent-c6="" class="claim__input">
+                                    <label _ngcontent-c6="" class="claim__label" for="note">Note</label>
+                                    <input _ngcontent-c6="" id="note" type="text" placeholder="Optional">
+                                </div>
+
+                                <div _ngcontent-c6="" class="claim__actions">
+                                    <ad-button _ngcontent-c6="" _nghost-c7="">
+                                        <button _ngcontent-c7="" matsteppernext="" class="primary" type="button">
+                                            Send
+                                        </button>
+                                    </ad-button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </ng-component>
+            </div>
+        </div>
+    </ng-component>
+</body>
+</html>

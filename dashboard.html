@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="./styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <script src="./menu.js"></script>
+</head>
+<body>
+    <ng-component _nghost-c1="">
+        <div  class="menu_container">
+            <ad-menu  _nghost-c2="">
+                <div  class="menu">
+                    <span  class="menu__logo"></span>
+
+                    <div  class="nav">
+                        <div  class="nav__burger">
+                            <span >Menu</span>
+                        </div>
+
+                        <div  class="nav__content">
+                            <div >
+                                <div  class="nav__content-mobile">
+
+                                </div>
+
+                                <a class="nav__item"
+                                          href="./dashboard.html"
+                                          style="background-image: url(&quot;./icons/dashboard.svg&quot;);">
+                                <span  class="nav__item-text">Dashboard</span>
+                            </a><a class="nav__item"
+                                          href="./purchase.html"
+                                          style="background-image: url(&quot;./icons/purchase.svg&quot;);">
+                                <span  class="nav__item-text">Purchase ADH</span>
+                            </a><a class="nav__item"
+                                          href="./claim.html"
+                                          style="background-image: url(&quot;./icons/claim.svg&quot;);">
+                                <span  class="nav__item-text">Claim ADH</span>
+                            </a><a class="nav__item"
+                                          href="./history.html"
+                                          style="background-image: url(&quot;./icons/history.svg&quot;);">
+                                <span  class="nav__item-text">History</span>
+                            </a>
+
+                                <div  class="nav__item nav__item_lang">
+                                    <ad-language-switcher  _nghost-c4="">
+                                        <div  aria-haspopup="true" class="language">
+                                            <div  class="language__selected en">
+                                            </div>
+
+
+                                            <span  class="nav__item-text">Switch language</span>
+
+                                        </div>
+
+                                        <mat-menu  class="ng-tns-c5-0"></mat-menu>
+                                    </ad-language-switcher>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div  class="menu__toggle">
+                        <div  class="menu__toggle-link"></div>
+                    </div>
+                </div>
+            </ad-menu>
+        </div>
+
+        <div  class="content">
+            <div  class="content__header">
+                <ad-sub-header  _nghost-c3="">
+                    <div  class="sub-header">
+                        <div  class="sub-header__text">
+                            <div  class="sub-header__title">Dashboard</div>
+                            <div  class="sub-header__info">progress of crowdfunding</div>
+                        </div>
+
+                        <div  class="sub-header__actions">
+
+                        </div>
+
+                        <div  aria-haspopup="true" class="sub-header__user">
+                            <div  class="sub-header__user-name">Mocked User</div>
+                            <div  class="sub-header__user-group">Mocked Login</div>
+                        </div>
+
+                        <mat-menu  class="ng-tns-c5-1"></mat-menu>
+                    </div>
+                </ad-sub-header>
+            </div>
+
+            <div  class="content__body">
+
+                <ng-component _nghost-c6="">
+                    <div  class="dashboard">
+                        <div  class="sale dashboard__sale">
+                            <div  class="sale__text">
+                                <div  class="sale__end">
+                                    Sale will end in
+                                </div>
+
+                                <div  class="sale__get">
+                                    Get 1 ADH for $100
+                                </div>
+                            </div>
+
+                            <div  class="time">
+                                <div  class="time__item">
+                                    <div  class="time__value">12</div>
+                                    <div  class="time__desc">Days</div>
+                                </div>
+                                <div  class="time__separator">:</div>
+                                <div  class="time__item">
+                                    <div  class="time__value">5</div>
+                                    <div  class="time__desc">Hours</div>
+                                </div>
+                                <div  class="time__separator">:</div>
+                                <div  class="time__item">
+                                    <div  class="time__value">43</div>
+                                    <div  class="time__desc">Minutes</div>
+                                </div>
+                                <div  class="time__separator">:</div>
+                                <div  class="time__item">
+                                    <div  class="time__value">01</div>
+                                    <div  class="time__desc">Seconds</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div  class="card funding">
+                            <div  class="card__header funding__header">
+                                Current bonus: 5%
+                            </div>
+
+                            <div  class="card__content funding__content">
+                                <div  class="funding__progress">
+                                    <div  class="funding__bounds">
+                                        <div  class="funding__bound">
+                                            $ 5,826,271.47
+                                            <span  class="funding__bounds-desc">Total funding</span>
+                                        </div>
+
+                                        <div  class="funding__bound">
+                                            $ 20,000,000
+                                            <span  class="funding__bounds-desc">Round target</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div  class="funding__actions">
+                                    <ad-button  _nghost-c8="">
+                                        <button  matsteppernext="" class="primary" type="button">
+                                            Buy ADH
+                                        </button>
+                                    </ad-button>
+                                </div>
+
+                                <div  class="funding__sub-actions">
+                                    <ad-button  _nghost-c8="">
+                                        <button  matsteppernext="" class="activate" type="button">
+                                            Light paper
+                                        </button>
+                                    </ad-button>
+                                    <ad-button  _nghost-c8="">
+                                        <button  matsteppernext="" class="activate" type="button">
+                                            White paper
+                                        </button>
+                                    </ad-button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-component>
+            </div>
+        </div>
+    </ng-component>
+</body>
+</html>
